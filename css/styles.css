@@ -104,6 +104,11 @@ a {
     margin: -1px;
 }
 
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 /* --------------header settings------------- */
 
 header {
@@ -129,7 +134,6 @@ header a {
 .accent {
     color: var(--accent-color);
 }
-
 
 .container.header {
     display: flex;
@@ -167,8 +171,6 @@ header a {
     outline: none;
 }
 
-
-
 .navigation,
 .header-contacts {
     display: flex;
@@ -179,7 +181,6 @@ header a {
     margin-left: 50px;
 }
 
-
 .logo {
     margin-right: 93px;
     font-family: Raleway, sans-serif;
@@ -189,6 +190,26 @@ header a {
     color: #000000;
     letter-spacing: 0.03em;
     text-decoration: none;
+}
+
+.navigation .item {
+    position: relative;
+
+}
+
+/* decoration for current page */
+.navigation .current::after {
+    content: '';
+
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--accent-color);
 }
 
 
@@ -294,7 +315,7 @@ header a {
 
 
 
-/* ------------------our-work--------------*/
+/* --------------------our-work-------------------*/
 .our-work h2 {
     text-align: center;
     margin-bottom: 50px;
@@ -308,8 +329,32 @@ header a {
     display: flex;
 }
 
+.our-work .item {
+    position: relative;
+}
+
 .our-work .item+.item {
     margin-left: 30px;
+}
+
+.work-explanation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 70px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.work-explanation h3 {
+    color: var(--main-white-color);
+    font-style: 14px;
+    font-weight: 700;
+    line-height: 1.14;
 }
 
 /*--------------------- our-team --------------*/
@@ -365,6 +410,26 @@ header a {
     line-height: 1.9;
 }
 
+.project-information-wrap {
+    width: 370px;
+    position: relative;
+}
+
+.short-project-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--main-white-color);
+
+    background: rgba(33, 150, 243, 0.9);
+}
 
 /* social links setiings start */
 .our-team .item {
@@ -528,6 +593,51 @@ footer {
     display: flex;
     /* align-intems: left; */
 }
+
+/* --------------------------------------- */
+/* ---------------MODAL WINDOW------------ */
+/* --------------------------------------- */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 581px;
+    padding: 8px;
+    border-radius: 4px;
+
+    background-color: var(--main-white-color);
+
+}
+
+.modal .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    border: none;
+    background-color: var(--main-white-color);
+    color: var(--main-white-color);
+    cursor: pointer;
+}
+
+.modal .svg {
+    fill: currentColor;
+}
+
 
 
 /*---------------------------------------------- */

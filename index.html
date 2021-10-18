@@ -21,7 +21,9 @@
             <a class="logo" href="./index.html" alt="Логотип компании" title=""><span
                     class="accent">Web</span>Studio</a>
             <ul class="navigation list">
-                <li class="item"><a href="./index.html" class="accent link">Студия</a></li>
+                <li class="item ">
+                    <a href="./index.html" class="accent link current">Студия</a>
+                </li>
                 <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                 <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
@@ -59,7 +61,7 @@
                 <h1 class="slogan">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>
                     ДЛЯ ВАШЕГО БИЗНЕСА
                 </h1>
-                <button type="button" class="btn hero-btn">Заказать услугу</button>
+                <button type="button" class="btn hero-btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- ---------------------ADVANTAGES------------------ -->
@@ -106,15 +108,29 @@
                 </ul>
             </div>
         </section>
-        <!-- ---------------------our work-------------- -->
+        <!-- ---------------------OUR WORK-------------------------- -->
         <section class="our-work section">
             <div class="container">
                 <h2 class="">Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li class="item"><img class="img" src="./img/img1.jpg" alt="разработка для планшетов" width="370">
+                    <li class="item">
+                        <img class="img" src="./img/img1.jpg" alt="разработка для планшетов" width="370">
+                        <div class="work-explanation">
+                            <h3>ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+                        </div>
                     </li>
-                    <li class="item"><img class="img" src="./img/img2.jpg" alt="мобильная разработка" width="370"></li>
-                    <li class="item"><img class="img" src="./img/img3.jpg" alt="графический дизайн" width="370"></li>
+                    <li class="item">
+                        <img class="img" src="./img/img2.jpg" alt="мобильная разработка" width="370">
+                        <div class="work-explanation">
+                            <h3>МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img class="img" src="./img/img3.jpg" alt="графический дизайн" width="370">
+                        <div class="work-explanation">
+                            <h3>ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -402,6 +418,18 @@
             </div>
         </div>
     </footer>
+
+    <!-- -----------------MODAL WINDOW----------------------- -->
+    <div class="backdrop  is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-btn" data-modal-close>
+                <svg class="icon-close svg" width="30px" height="30px">
+                    <use href="./img/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

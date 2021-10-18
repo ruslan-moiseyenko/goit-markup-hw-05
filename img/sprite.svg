@@ -1,4 +1,5 @@
-<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"
+  xmlns="http://www.w3.org/2000/svg">
   <defs>
     <symbol id="envelope" viewBox="0 0 43 32">
       <path d="M38.667 0H4C1.794 0 0 1.794 0 4v24c0 2.206 1.794 4 4 4h34.667c2.206 0 4-1.794 4-4V4c0-2.206-1.794-4-4-4zm0 2.667c.181 0 .353.038.511.103L21.334 18.236 3.49 2.77a1.32 1.32 0 0 1 .511-.103h34.667zm0 26.666H4A1.334 1.334 0 0 1 2.667 28V5.587L20.46 21.008a1.335 1.335 0 0 0 1.748 0L40.001 5.587V28c0 .736-.598 1.333-1.333 1.333z"/>
@@ -61,5 +62,13 @@
       <path d="M18.722 27.036 3.2 23.227V9.828l15.522 3.807v13.401z"/>
       <path d="m10.661 4.465 13.578 3.33-5.774 4.987L4.885 9.45l5.776-4.985zm-.257-.856L3.2 9.828l15.522 3.807 7.202-6.219-15.52-3.807zm9.191 22.673 6.329-5.465-6.329-1.553v7.018z"/>
     </symbol>
+    <symbol id="close" viewBox="0 0 30 30">
+      <circle cx="15" cy="15" r="15" fill="white"/>
+      <circle cx="15" cy="15" r="14.5" stroke="black" stroke-opacity="0.1"/>
+      <path d="M21 10.1079L19.8921 9L15.5 13.3921L11.1079 9L10 10.1079L14.3921 14.5L10 18.8921L11.1079 20L15.5 15.6079L19.8921 20L21 18.8921L16.6079 14.5L21 10.1079Z" fill="black"/>
+
+    </symbol>
+
+
   </defs>
 </svg>
