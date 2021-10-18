@@ -754,7 +754,8 @@ footer {
 }
 
 
-.link:hover .short-project-description {
+.link:hover .short-project-description,
+.link:focus .short-project-description {
     opacity: 1;
     transform: translateY(0);
 }
